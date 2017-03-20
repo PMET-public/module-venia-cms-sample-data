@@ -1,0 +1,44 @@
+title,identifier,content
+"Footer Links 1",footer_links_1,"<div class=""links"">
+<h4>Customer Support</h4>
+<ul>
+<li><a href=""{{config path=""web/secure/base_url""}}customer/account/"">Track Your Order</a></li>
+<li><a href=""{{config path=""web/unsecure/base_url""}}returns"">Returns &amp; Exchanges</a></li>
+<li><a href=""#"">Store Locator</a></li>
+</ul>
+</div>
+"
+"Footer Links 2",footer_links_2,"<div class=""links"">
+<h4>Our Brands</h4>
+<ul>
+<li><a href=""company-info"">About Luma</a></li>
+<li><a href=""community"">Community</a></li>
+<li><a href=""#"">Shop Venia</a></li>
+</ul>
+</div>
+"
+"Footer Links 3",footer_links_3,"<div class=""links"">
+<h4>Follow @venia</h4>
+<a href=""https://www.twitter.com/lumafitness"" target=""_blank"">
+<img src=""{{media url=""wysiwyg/cms/footer-follow-venia-1x.jpg""}}"" alt="""" />
+</a>
+</div>
+"
+"Footer Links 4",footer_links_4,"<div class=""links"">
+<h4>Find A Store Near You</h4>
+<a href=""/storelocator"">
+<img src=""{{media url=""wysiwyg/cms/footer-store-locator-1x.jpg""}}"" alt="""" />
+</a>
+</div>
+"
+"Footer Links Social",footer_links_social,"<div class=""social"">
+<h4>Social Links</h4>
+<a class=""icon-facebook"" href=""https://www.facebook.com/ebayluma""></a>
+<a class=""icon-twitter"" href=""https://twitter.com/thelumastory""></a>
+<a class=""icon-youtube"" href=""https://www.youtube.com/channel/UCMdGhsvA7obKMxg9ZppXuIA""></a>
+<a class=""icon-pinterest"" href=""https://www.pinterest.com/TheLUMAStory/""></a>
+<a class=""icon-instagram"" href=""https://instagram.com/ebay_luma/""></a>
+</div>
+"
+"Magento 2 Link",magento-link,"<a href=""https://magento.com/"" target=""_blank"">Magento 2.0</a>"
+"Promo Banner",promo_banner,"<div class=""promo-banner"">Add any one accessory to your order for 50% off</div>"
