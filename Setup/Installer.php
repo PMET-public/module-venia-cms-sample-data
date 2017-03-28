@@ -21,11 +21,6 @@ class Installer implements Setup\SampleData\InstallerInterface
     private $block;
 
     /**
-     * @var \MagentoEse\VeniaCmsSampleData\Model\Category
-     */
-    private $category;
-
-    /**
      * @var \MagentoEse\VeniaCmsSampleData\Model\Bluefoot
      */
     private $bluefoot;
@@ -33,21 +28,18 @@ class Installer implements Setup\SampleData\InstallerInterface
     /**
      * @param \MagentoEse\VeniaCmsSampleData\Model\Page $page
      * @param \MagentoEse\VeniaCmsSampleData\Model\Block $block
-     * @param \MagentoEse\VeniaCmsSampleData\Model\Category $category
      * @param \MagentoEse\VeniaCmsSampleData\Model\Bluefoot $bluefoot
 
      */
     public function __construct(
         \MagentoEse\VeniaCmsSampleData\Model\Page $page,
         \MagentoEse\VeniaCmsSampleData\Model\Block $block,
-        \MagentoEse\VeniaCmsSampleData\Model\Category $category
         //\MagentoEse\VeniaCmsSampleData\Model\Bluefoot $bluefoot
 
     ) {
         //$this->category = $category;
         $this->page = $page;
         $this->block = $block;
-        $this->category = $category;
         //$this->category = $bluefoot;
     }
 
@@ -58,7 +50,6 @@ class Installer implements Setup\SampleData\InstallerInterface
     {
         $this->page->install(['MagentoEse_VeniaCmsSampleData::fixtures/pages.csv']);
         $this->block->install(['MagentoEse_VeniaCmsSampleData::fixtures/blocks.csv']);
-        $this->category->install(['MagentoEse_VeniaCmsSampleData::fixtures/categories.csv']);
         //$this->Category->install(['MagentoEse_VeniaCmsSampleData::fixtures/bluefoot.csv']);
     }
 }
