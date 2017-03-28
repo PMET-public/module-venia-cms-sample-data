@@ -68,7 +68,6 @@ class Page
                 $row = $data;
 
                 $this->pageFactory->create()
-                    //->load($row['identifier'], 'identifier')
                     ->addData($row)
                     ->setStoreId($_viewId)
                     ->save();

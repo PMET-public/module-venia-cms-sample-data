@@ -90,7 +90,7 @@ class Block
     protected function saveCmsBlock($data)
     {
         $cmsBlock = $this->blockFactory->create();
-        //$cmsBlock->getResource()->load($cmsBlock, $data['identifier']);
+        $cmsBlock->getResource()->load($cmsBlock, $data['identifier']);
 
         //get view id from view code
         $_viewId = $this->storeView->load($this->config['viewCode'])->getStoreId();
