@@ -33,7 +33,7 @@ class Installer implements Setup\SampleData\InstallerInterface
      */
     public function __construct(
         \MagentoEse\VeniaCmsSampleData\Model\Page $page,
-        \MagentoEse\VeniaCmsSampleData\Model\Block $block,
+        \MagentoEse\VeniaCmsSampleData\Model\Block $block
         //\MagentoEse\VeniaCmsSampleData\Model\Bluefoot $bluefoot
 
     ) {
