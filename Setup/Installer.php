@@ -40,7 +40,7 @@ class Installer implements Setup\SampleData\InstallerInterface
         //$this->category = $category;
         $this->page = $page;
         $this->block = $block;
-        //$this->category = $bluefoot;
+        //$this->bluefoot = $bluefoot;
     }
 
     /**

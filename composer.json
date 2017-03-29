@@ -1,5 +1,8 @@
 {
     "name": "magentoese/module-venia-cms-sample-data",
+    "require": {
+        "magentoese/module-venia-media-sample-data": "*"
+    },
     "type": "magento2-module",
     "version": "0.0.1",
     "autoload": {
