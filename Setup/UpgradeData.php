@@ -9,57 +9,101 @@ use Magento\Framework\Config\ConfigOptionsListConstants;
 
 class UpgradeData implements UpgradeDataInterface
 {
-      public function upgrade(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
-      {
-          $setup->startSetup();
-          if (version_compare($context->getVersion(), '0.0.2') < 0
-          ) {
+    /**
+     * @var \Gene\BlueFoot\Model\Stage\SaveFactory
+     */
+    protected $saveFactory;
 
-            $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-            $resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
-            $connection = $resource->getConnection();
-            $tableName = $resource->getTableName('gene_bluefoot_stage_template');
-            $tableNamePage = $resource->getTableName('cms_page');
-            $tableNameBlock = $resource->getTableName('cms_block');
-            $config = $objectManager->get('Magento\Framework\App\DeploymentConfig');
-            $dbName = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_NAME);
-            $dbUser = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_USER);
-            $dbPass = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_PASSWORD);
-            $dbHost = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_HOST);
-            $mysqliConnection = mysqli_connect($dbHost,$dbUser,$dbPass,$dbName);
-            $bluefootVeniaHome = mysqli_real_escape_string ($mysqliConnection,json_encode(json_decode(file_get_contents(__DIR__.'/venia-home.json'),true)));
+    /**
+     * @var
+     */
+    protected $connection;
 
-            // INSERT DATA
-            $sql = "INSERT INTO `gene_bluefoot_stage_template` (`template_id`, `name`, `structure`, `has_data`, `preview`, `pinned`, `created_at`, `updated_at`)
-            VALUES
-              (1, 'Venia Home', '$bluefootVeniaHome', 1, '".file_get_contents(__DIR__.'/venia-home.png.txt')."', 0, '2017-03-29 18:54:14', '2017-04-02 12:00:00');";
-            $connection->query($sql);
+    /**
+     * @var \Magento\Framework\App\ResourceConnection
+     */
+    protected $resource;
 
-            $bluefootVeniaClpTops = mysqli_real_escape_string ($mysqliConnection,json_encode(json_decode(file_get_contents(__DIR__.'/venia-clp-tops.json'),true)));
+    /**
+     * UpgradeData constructor.
+     * @param \Gene\BlueFoot\Model\Stage\SaveFactory $saveFactory
+     * @param \Magento\Framework\App\ResourceConnection $resource
+     */
+    public function __construct(
+        \Gene\BlueFoot\Model\Stage\SaveFactory $saveFactory,
+        \Magento\Framework\App\ResourceConnection $resource
+    ) {
+        $this->saveFactory = $saveFactory;
+        $this->resource = $resource;
+    }
 
-            $sql = "INSERT INTO `gene_bluefoot_stage_template` (`template_id`, `name`, `structure`, `has_data`, `preview`, `pinned`, `created_at`, `updated_at`)
-            VALUES
-            (2, 'Venia CLP Tops', '$bluefootVeniaClpTops', 1, '".file_get_contents(__DIR__.'/venia-clp-tops.png.txt')."', 0, '2017-03-29 18:54:43', '2017-04-02 12:00:00');";
-            $connection->query($sql);
+    /**
+     * @param ModuleDataSetupInterface $setup
+     * @param ModuleContextInterface $context
+     */
+    public function upgrade(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
+    {
+        $setup->startSetup();
 
-
+        if (version_compare($context->getVersion(), '0.0.2') < 0) {
             // Homepage CMS Page
-
-            $bluefootVeniaHomeContent = mysqli_real_escape_string ($mysqliConnection, '<!--GENE_BLUEFOOT="'.json_encode(json_decode(file_get_contents(__DIR__.'/venia-home-content.json'),true)).'"-->');
-
-            $pageName = '"Home Page - Venia"';
-            $sql = "UPDATE " . $tableNamePage . " SET content = '$bluefootVeniaHomeContent' WHERE title LIKE " . $pageName;
-            $connection->query($sql);
+            $this->updateCmsPageContent('Home Page - Venia', $this->buildStructureFromTemplate(__DIR__ . '/venia-home-content.json'));
 
             // CLP Tops Block CMS
-            $bluefootVeniaClpTopsContent = mysqli_real_escape_string($mysqliConnection,'<!--GENE_BLUEFOOT="'.json_encode(json_decode(file_get_contents(__DIR__.'/venia-clp-tops-content.json'),true)).'"-->');
-            $blockIdentifier = '"venia-clp-tops"';
-            $sql = "UPDATE " . $tableNameBlock . " SET content = '$bluefootVeniaClpTopsContent' WHERE identifier = " . $blockIdentifier;
-            $connection->query($sql);
-
-          }
-
-          $setup->endSetup();
-
+            $this->updateCmsBlockContent('venia-clp-tops', $this->buildStructureFromTemplate(__DIR__ . '/venia-clp-tops-content.json'));
         }
+
+        $setup->endSetup();
+    }
+
+    /**
+     * Update the CMS pages content
+     *
+     * @param $title
+     * @param $content
+     */
+    public function updateCmsPageContent($title, $content)
+    {
+        $this->resource->getConnection()->update('cms_page', ['content' => $content], ['title = ?' => $title]);
+    }
+
+    /**
+     * Update a CMS blocks content
+     *
+     * @param $identifier
+     * @param $content
+     */
+    public function updateCmsBlockContent($identifier, $content)
+    {
+        $this->resource->getConnection()->update('cms_block', ['content' => $content], ['identifier = ?' => $identifier]);
+    }
+
+    /**
+     * Build the structure from a template housed within an external JSON file
+     *
+     * @param $templateLocation
+     * @return string
+     */
+    public function buildStructureFromTemplate($templateLocation)
+    {
+        return $this->buildStructureFromTemplateString(file_get_contents($templateLocation));
+    }
+
+    /**
+     * Build the final structure from the template string
+     *
+     * @param $templateJson
+     * @return string
+     * @throws \Exception
+     */
+    public function buildStructureFromTemplateString($templateJson)
+    {
+        $saveFactory = $this->saveFactory->create();
+        if ($decodedStructure = $saveFactory->decodeStructure($templateJson)) {
+            $saveFactory->createStructure($decodedStructure);
+            return $saveFactory->encodeStructure($decodedStructure);
+        } else {
+            throw new \Exception('Unable to convert template data into fully formed BlueFoot structure.');
+        }
+    }
 }
