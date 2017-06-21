@@ -96,7 +96,7 @@
                   "formData":{
                      "textarea":"<h2 style=\"text-align: center;\">Spring Looks We Love</h2>",
                      "preview_view":{
-                        "entity_id":"52",
+                        "entity_id":"4",
                         "textarea":"<h2 style=\"text-align: center;\">Spring Looks We Love</h2>",
                         "align":"",
                         "metric":""
@@ -292,7 +292,7 @@
             "formData":{
                "textarea":"<h2 style=\"text-align: center;\">The Great Escape</h2>",
                "preview_view":{
-                  "entity_id":"53",
+                  "entity_id":"11",
                   "textarea":"<h2 style=\"text-align: center;\">The Great Escape</h2>",
                   "align":"",
                   "metric":""
@@ -396,7 +396,7 @@
                   "formData":{
                      "textarea":"<h2 style=\"text-align: center;\">Backstage</h2>",
                      "preview_view":{
-                        "entity_id":"54",
+                        "entity_id":"15",
                         "textarea":"<h2 style=\"text-align: center;\">Backstage</h2>",
                         "align":"",
                         "metric":""
@@ -460,7 +460,7 @@
                   "formData":{
                      "textarea":"<h2 style=\"text-align: center;\">Scarves &nbsp;101</h2>",
                      "preview_view":{
-                        "entity_id":"55",
+                        "entity_id":"18",
                         "textarea":"<h2 style=\"text-align: center;\">Scarves &nbsp;101</h2>",
                         "align":"",
                         "metric":""
@@ -602,8 +602,8 @@
                "remove_padding":"1",
                "css_classes":"",
                "undefined":"",
-               "align":"center",
-               "metric":"{\"margin\":\"0px - 0px 10%\",\"padding\":\"0px 0px 0px 0px\"}"
+               "align":"right",
+               "metric":"{\"margin\":\"0px -5% 0px 10%\",\"padding\":\"0px 0px 0px 0px\"}"
             },
             "children":[
                {
@@ -637,23 +637,23 @@
                "remove_padding":"1",
                "css_classes":"",
                "undefined":"",
-               "align":"center",
+               "align":"left",
                "metric":"{\"margin\":\"- - - -10%\",\"padding\":\"- - - -\"}"
             },
             "children":[
                {
                   "contentType":"image",
                   "formData":{
-                     "alt_tag":"earring",
+                     "alt_tag":"bracelet",
                      "has_lightbox":"0",
                      "show_caption":"0",
-                     "image":"/h/p/hp-earrings-slider.jpg",
+                     "image":"/v/a/va22-si_alt3_1.jpg",
                      "preview_view":{
                         "entity_id":"25",
-                        "alt_tag":"earring",
+                        "alt_tag":"bracelet",
                         "has_lightbox":"No",
                         "show_caption":"No",
-                        "image":"/h/p/hp-earrings-slider.jpg",
+                        "image":"/v/a/va22-si_alt3_1.jpg",
                         "align":"center",
                         "metric":""
                      },
@@ -682,7 +682,7 @@
             "formData":{
                "textarea":"<h2 style=\"text-align: center;\">@Venia</h2>",
                "preview_view":{
-                  "entity_id":"56",
+                  "entity_id":"26",
                   "textarea":"<h2 style=\"text-align: center;\">@Venia</h2>",
                   "align":"",
                   "metric":""
