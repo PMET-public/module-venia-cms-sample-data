@@ -1,543 +1,533 @@
 [
-  {
-    "type": "row",
-    "formData": {
-      "template": "default.phtml",
-      "background_color": "",
-      "background_image": "/v/e/venia_outfit-4_1074_3.jpg",
-      "css_classes": "",
-      "undefined": "",
-      "align": "center",
-      "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-    },
-    "children": [
-      {
-        "contentType": "textarea",
-        "formData": {
-          "textarea": "<p><span style=\"color: #ffffff; font-size: 3.2rem; font-family: 'tenor-sans';\">Ditch Your Tees<br />Keep The Comfort</span></p>",
-          "preview_view": {
-            "entity_id": "34",
-            "textarea": "<p><span style=\"color: #ffffff; font-size: 3.2rem; font-family: 'tenor-sans';\">Ditch Your Tees<br />Keep The Comfort</span></p>",
-            "align": "center",
-            "metric": "{\"margin\":\"200px - 200px -\",\"padding\":\"- - - -\"}"
-          },
-          "align": "center",
-          "metric": "{\"margin\":\"200px - 200px -\",\"padding\":\"- - - -\"}"
-        }
-      }
-    ]
-  },
-  {
-    "type": "row",
-    "formData": {
-      "template": "default.phtml",
-      "background_color": "",
-      "background_image": "",
-      "css_classes": "",
-      "undefined": "",
-      "align": "center",
-      "metric": "{\"margin\":\"-50px 200px - 200px\",\"padding\":\"- - - -\"}"
-    },
-    "children": [
-      {
-        "type": "column",
-        "formData": {
-          "width": "0.500",
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "",
-          "metric": "{\"margin\":\"- - - -\",\"padding\":\"- - - -\"}"
-        },
-        "children": [
-          {
-            "contentType": "driver",
-            "formData": {
-              "alt_tag": "Blouses",
-              "link_url": "/venia-tops/venia-blouses.html",
-              "target_blank": "0",
-              "image": "/t/o/top2_pixabay_1.jpg",
-              "preview_view": {
-                "entity_id": "35",
-                "alt_tag": "Blouses",
-                "link_url": "/venia-tops/venia-blouses.html",
-                "target_blank": "No",
-                "image": "/t/o/top2_pixabay_1.jpg",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-            }
-          },
-          {
-            "contentType": "heading",
-            "formData": {
-              "title": "Blouses  & Shirts",
-              "heading_type": "235",
-              "preview_view": {
-                "entity_id": "36",
-                "title": "Blouses  & Shirts",
-                "heading_type": "h2",
-                "align": "center",
-                "metric": ""
-              },
-              "align": "center",
-              "metric": ""
-            }
-          }
-        ]
+   {
+      "type":"row",
+      "formData":{
+         "template":"default.phtml",
+         "background_color":"",
+         "background_image":"/v/e/venia_outfit-4_1074_3.jpg",
+         "css_classes":"",
+         "undefined":"",
+         "align":"center",
+         "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
       },
-      {
-        "type": "column",
-        "formData": {
-          "width": "0.500",
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "",
-          "metric": "{\"margin\":\"- - - -\",\"padding\":\"- - - -\"}"
-        },
-        "children": [
-          {
-            "contentType": "driver",
-            "formData": {
-              "alt_tag": "New Tops",
-              "link_url": "/venia-tops/venia-sweaters.html?in_store_available=232",
-              "target_blank": "0",
-              "image": "/s/t/store_pixabay_2.jpg",
-              "preview_view": {
-                "entity_id": "37",
-                "alt_tag": "New Tops",
-                "link_url": "/venia-tops/venia-sweaters.html?in_store_available=232",
-                "target_blank": "No",
-                "image": "/s/t/store_pixabay_2.jpg",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+      "children":[
+         {
+            "contentType":"textarea",
+            "formData":{
+               "textarea":"<p><span style=\"color: #ffffff; font-size: 3.2rem; font-family: 'tenor-sans';\">Ditch Your Tees<br />Keep The Comfort</span></p>",
+               "preview_view":{
+                  "entity_id":"32",
+                  "textarea":"<p><span style=\"color: #ffffff; font-size: 3.2rem; font-family: 'tenor-sans';\">Ditch Your Tees<br />Keep The Comfort</span></p>",
+                  "align":"center",
+                  "metric":"{\"margin\":\"200px - 200px -\",\"padding\":\"- - - -\"}"
+               },
+               "align":"center",
+               "metric":"{\"margin\":\"200px - 200px -\",\"padding\":\"- - - -\"}"
             }
-          },
-          {
-            "contentType": "heading",
-            "formData": {
-              "title": "New  Arrivals",
-              "heading_type": "235",
-              "preview_view": {
-                "entity_id": "38",
-                "title": "New  Arrivals",
-                "heading_type": "h2",
-                "align": "center",
-                "metric": ""
-              },
-              "align": "center",
-              "metric": ""
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "row",
-    "formData": {
-      "template": "full-width.phtml",
-      "background_color": "fff0e9",
-      "background_image": "",
-      "css_classes": "",
-      "undefined": "",
-      "align": "center",
-      "metric": "{\"margin\":\"50px - 0px -\",\"padding\":\"- - 0px -\"}"
-    },
-    "children": [
-      {
-        "type": "column",
-        "formData": {
-          "width": 0.333,
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "center",
-          "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-        },
-        "children": [
-          {
-            "contentType": "image",
-            "formData": {
-              "alt_tag": "Blouses",
-              "has_lightbox": "0",
-              "show_caption": "0",
-              "image": "/b/l/blouse4_stocksnap_kceffzsbif.jpg",
-              "preview_view": {
-                "entity_id": "39",
-                "alt_tag": "Blouses",
-                "has_lightbox": "No",
-                "show_caption": "No",
-                "image": "/b/l/blouse4_stocksnap_kceffzsbif.jpg",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-            }
-          }
-        ]
+         }
+      ]
+   },
+   {
+      "type":"row",
+      "formData":{
+         "template":"default.phtml",
+         "background_color":"",
+         "background_image":"",
+         "css_classes":"",
+         "undefined":"",
+         "align":"center",
+         "metric":"{\"margin\":\"-50px 200px - 200px\",\"padding\":\"- - - -\"}"
       },
-      {
-        "type": "column",
-        "formData": {
-          "width": 0.333,
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "",
-          "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-        },
-        "children": [
-          {
-            "contentType": "heading",
-            "formData": {
-              "title": "Now Trending: Embroidery  & Lace",
-              "heading_type": "235",
-              "preview_view": {
-                "entity_id": "40",
-                "title": "Now Trending: Embroidery  & Lace",
-                "heading_type": "h2",
-                "align": "center",
-                "metric": "{\"margin\":\"- 50px - 50px\",\"padding\":\"- - - -\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"- 50px - 50px\",\"padding\":\"- - - -\"}"
-            }
-          },
-          {
-            "contentType": "textarea",
-            "formData": {
-              "textarea": "<p>Romantic. Ultra-feminine. Classic.<br />This season brings with it stunning wardrobe ideas where lace is intermingled with slouchy silhouettes for a more casual look, or combined with refined lines and bold accessories for a more formal feel.</p>",
-              "preview_view": {
-                "entity_id": "41",
-                "textarea": "<p>Romantic. Ultra-feminine. Classic.<br />This season brings with it stunning wardrobe ideas where lace is intermingled with slouchy silhouettes for a more casual look, or combined with refined lines and bold accessories for a more formal feel.</p>",
-                "align": "center",
-                "metric": "{\"margin\":\"- 50px - 50px\",\"padding\":\"- - - -\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"- 50px - 50px\",\"padding\":\"- - - -\"}"
-            }
-          },
-          {
-            "contentType": "buttons",
-            "formData": {
-              "button_items": "1",
-              "preview_view": {
-                "entity_id": "42",
-                "button_items": "1",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}",
-                "child_blocks": {
-                  "button_items": [
-                    {
-                      "html": "\n        <button type=\"button\" class=\"gene-bluefoot-block-button\">SHOP NOW</button>\n    "
-                    }
-                  ]
-                }
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+      "children":[
+         {
+            "type":"column",
+            "formData":{
+               "width":"0.500",
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"",
+               "metric":"{\"margin\":\"- - - -\",\"padding\":\"- - - -\"}"
             },
-            "children": {
-              "button_items": [
-                {
-                  "contentType": "button_item",
-                  "formData": {
-                    "link_text": "SHOP NOW",
-                    "link_url": "/venia-tops/venia-blouses.html",
-                    "preview_view": {
-                      "entity_id": "43",
-                      "link_text": "SHOP NOW",
-                      "link_url": "/venia-tops/venia-blouses.html",
-                      "align": "center",
-                      "metric": ""
-                    },
-                    "align": "center",
-                    "metric": ""
+            "children":[
+               {
+                  "contentType":"driver",
+                  "formData":{
+                     "alt_tag":"Blouses",
+                     "link_url":"/venia-tops/venia-blouses.html",
+                     "target_blank":"0",
+                     "image":"/t/o/top2_pixabay_1.jpg",
+                     "preview_view":{
+                        "entity_id":"33",
+                        "alt_tag":"Blouses",
+                        "link_url":"/venia-tops/venia-blouses.html",
+                        "target_blank":"No",
+                        "image":"/t/o/top2_pixabay_1.jpg",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
                   }
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "type": "column",
-        "formData": {
-          "width": 0.333,
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "center",
-          "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-        },
-        "children": [
-          {
-            "contentType": "image",
-            "formData": {
-              "alt_tag": "Blouse Two",
-              "has_lightbox": "0",
-              "show_caption": "0",
-              "image": "/b/l/blouse2_stocksnap_8dao2yqg9w.jpg",
-              "preview_view": {
-                "entity_id": "44",
-                "alt_tag": "Blouse Two",
-                "has_lightbox": "No",
-                "show_caption": "No",
-                "image": "/b/l/blouse2_stocksnap_8dao2yqg9w.jpg",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "row",
-    "formData": {
-      "template": "default.phtml",
-      "background_color": "",
-      "background_image": "",
-      "css_classes": "",
-      "undefined": "",
-      "align": "center",
-      "metric": "{\"margin\":\"50px 200px - 200px\",\"padding\":\"- - - -\"}"
-    },
-    "children": [
-      {
-        "type": "column",
-        "formData": {
-          "width": "0.500"
-        },
-        "children": [
-          {
-            "contentType": "driver",
-            "formData": {
-              "alt_tag": "Blouses",
-              "link_url": "/venia-tops/venia-blouses.html",
-              "target_blank": "0",
-              "image": "/b/l/blouse5_stocksnap_8a93wry44s_1.jpg",
-              "preview_view": {
-                "entity_id": "45",
-                "alt_tag": "Blouses",
-                "link_url": "/venia-tops/venia-blouses.html",
-                "target_blank": "No",
-                "image": "/b/l/blouse5_stocksnap_8a93wry44s_1.jpg",
-                "align": "",
-                "metric": ""
-              },
-              "align": "",
-              "metric": ""
-            }
-          },
-          {
-            "contentType": "heading",
-            "formData": {
-              "title": "Sleeveless Options",
-              "heading_type": "235",
-              "preview_view": {
-                "entity_id": "46",
-                "title": "Sleeveless Options",
-                "heading_type": "h2",
-                "align": "center",
-                "metric": ""
-              },
-              "align": "center",
-              "metric": ""
-            }
-          }
-        ]
-      },
-      {
-        "type": "column",
-        "formData": {
-          "width": "0.500"
-        },
-        "children": [
-          {
-            "contentType": "driver",
-            "formData": {
-              "alt_tag": "Sweaters",
-              "link_url": "/venia-tops/venia-sweaters.html",
-              "target_blank": "0",
-              "image": "/s/w/sweater5_stocksnap_y2qcogsp5p_1.jpg",
-              "preview_view": {
-                "entity_id": "47",
-                "alt_tag": "Sweaters",
-                "link_url": "/venia-tops/venia-sweaters.html",
-                "target_blank": "No",
-                "image": "/s/w/sweater5_stocksnap_y2qcogsp5p_1.jpg",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-            }
-          },
-          {
-            "contentType": "heading",
-            "formData": {
-              "title": "Statement Stripes",
-              "heading_type": "235",
-              "preview_view": {
-                "entity_id": "48",
-                "title": "Statement Stripes",
-                "heading_type": "h2",
-                "align": "center",
-                "metric": ""
-              },
-              "align": "center",
-              "metric": ""
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "row",
-    "formData": {
-      "template": "full-width.phtml",
-      "background_color": "fff0e9",
-      "background_image": "",
-      "css_classes": "",
-      "undefined": "",
-      "align": "center",
-      "metric": "{\"margin\":\"50px - - -\",\"padding\":\"- - - -\"}"
-    },
-    "children": [
-      {
-        "type": "column",
-        "formData": {
-          "width": "0.500",
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "center",
-          "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-        },
-        "children": [
-          {
-            "contentType": "image",
-            "formData": {
-              "alt_tag": "Sweaters",
-              "has_lightbox": "0",
-              "show_caption": "0",
-              "image": "/s/w/sweater2_pixabay.jpg",
-              "preview_view": {
-                "entity_id": "49",
-                "alt_tag": "Sweaters",
-                "has_lightbox": "No",
-                "show_caption": "No",
-                "image": "/s/w/sweater2_pixabay.jpg",
-                "align": "center",
-                "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
-            }
-          }
-        ]
-      },
-      {
-        "type": "column",
-        "formData": {
-          "width": "0.500",
-          "remove_padding": "1",
-          "css_classes": "",
-          "undefined": "",
-          "align": "center",
-          "metric": "{\"margin\":\"7% - - -\",\"padding\":\"- - - -\"}"
-        },
-        "children": [
-          {
-            "contentType": "heading",
-            "formData": {
-              "title": "Comfy Knitwear",
-              "heading_type": "235",
-              "preview_view": {
-                "entity_id": "50",
-                "title": "Comfy Knitwear",
-                "heading_type": "h2",
-                "align": "center",
-                "metric": ""
-              },
-              "align": "center",
-              "metric": ""
-            }
-          },
-          {
-            "contentType": "textarea",
-            "formData": {
-              "textarea": "<p>Imagine what it would feel like to wear your favorite blanket all day, yet still look amazing. When the temperature drops on milder days, Venia sweaters make a far cozier alternative to a jacket. Comfort can look this good.</p>",
-              "preview_view": {
-                "entity_id": "51",
-                "textarea": "<p>Imagine what it would feel like to wear your favorite blanket all day, yet still look amazing. When the temperature drops on milder days, Venia sweaters make a far cozier alternative to a jacket. Comfort can look this good.</p>",
-                "align": "center",
-                "metric": "{\"margin\":\"- 100px - 100px\",\"padding\":\"- - - -\"}"
-              },
-              "align": "center",
-              "metric": "{\"margin\":\"- 100px - 100px\",\"padding\":\"- - - -\"}"
-            }
-          },
-          {
-            "contentType": "buttons",
-            "formData": {
-              "button_items": "1",
-              "preview_view": {
-                "entity_id": "52",
-                "button_items": "1",
-                "align": "center",
-                "metric": "",
-                "child_blocks": {
-                  "button_items": [
-                    {
-                      "html": "\n        <button type=\"button\" class=\"gene-bluefoot-block-button\">SHOP NOW</button>\n    "
-                    }
-                  ]
-                }
-              },
-              "align": "center",
-              "metric": ""
+               },
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<h2 style=\"text-align: center;\">Blouses &nbsp;&amp; Shirts</h2>",
+                     "preview_view":{
+                        "entity_id":"57",
+                        "textarea":"<h2 style=\"text-align: center;\">Blouses &nbsp;&amp; Shirts</h2>",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               }
+            ]
+         },
+         {
+            "type":"column",
+            "formData":{
+               "width":"0.500",
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"",
+               "metric":"{\"margin\":\"- - - -\",\"padding\":\"- - - -\"}"
             },
-            "children": {
-              "button_items": [
-                {
-                  "contentType": "button_item",
-                  "formData": {
-                    "link_text": "SHOP NOW",
-                    "link_url": "/venia-tops/venia-sweaters.html",
-                    "preview_view": {
-                      "entity_id": "53",
-                      "link_text": "SHOP NOW",
-                      "link_url": "/venia-tops/venia-sweaters.html",
-                      "align": "center",
-                      "metric": ""
-                    },
-                    "align": "center",
-                    "metric": ""
+            "children":[
+               {
+                  "contentType":"driver",
+                  "formData":{
+                     "alt_tag":"New Tops",
+                     "link_url":"/venia-tops/venia-sweaters.html?in_store_available=232",
+                     "target_blank":"0",
+                     "image":"/s/t/store_pixabay_2.jpg",
+                     "preview_view":{
+                        "entity_id":"35",
+                        "alt_tag":"New Tops",
+                        "link_url":"/venia-tops/venia-sweaters.html?in_store_available=232",
+                        "target_blank":"No",
+                        "image":"/s/t/store_pixabay_2.jpg",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
                   }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "extra",
-    "deleted": []
-  }
+               },
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<h2 style=\"text-align: center;\">New &nbsp;Arrivals</h2>",
+                     "preview_view":{
+                        "entity_id":"58",
+                        "textarea":"<h2 style=\"text-align: center;\">New &nbsp;Arrivals</h2>",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "type":"row",
+      "formData":{
+         "template":"full-width.phtml",
+         "background_color":"fff0e9",
+         "background_image":"",
+         "css_classes":"",
+         "undefined":"",
+         "align":"center",
+         "metric":"{\"margin\":\"50px - 0px -\",\"padding\":\"- - 0px -\"}"
+      },
+      "children":[
+         {
+            "type":"column",
+            "formData":{
+               "width":0.333,
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"center",
+               "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+            },
+            "children":[
+               {
+                  "contentType":"image",
+                  "formData":{
+                     "alt_tag":"Blouses",
+                     "has_lightbox":"0",
+                     "show_caption":"0",
+                     "image":"/b/l/blouse4_stocksnap_kceffzsbif.jpg",
+                     "preview_view":{
+                        "entity_id":"37",
+                        "alt_tag":"Blouses",
+                        "has_lightbox":"No",
+                        "show_caption":"No",
+                        "image":"/b/l/blouse4_stocksnap_kceffzsbif.jpg",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                  }
+               }
+            ]
+         },
+         {
+            "type":"column",
+            "formData":{
+               "width":0.333,
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"",
+               "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+            },
+            "children":[
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<h3 style=\"text-align: center;\">Now Trending: Embroidery &nbsp;&amp; Lace</h3>",
+                     "preview_view":{
+                        "entity_id":"59",
+                        "textarea":"<h3 style=\"text-align: center;\">Now Trending: Embroidery &nbsp;&amp; Lace</h3>",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               },
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<p>Romantic. Ultra-feminine. Classic.<br />This season brings with it stunning wardrobe ideas where lace is intermingled with slouchy silhouettes for a more casual look, or combined with refined lines and bold accessories for a more formal feel.</p>",
+                     "preview_view":{
+                        "entity_id":"39",
+                        "textarea":"<p>Romantic. Ultra-feminine. Classic.<br />This season brings with it stunning wardrobe ideas where lace is intermingled with slouchy silhouettes for a more casual look, or combined with refined lines and bold accessories for a more formal feel.</p>",
+                        "align":"center",
+                        "metric":"{\"margin\":\"- 50px - 50px\",\"padding\":\"- - - -\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"- 50px - 50px\",\"padding\":\"- - - -\"}"
+                  }
+               },
+               {
+                  "contentType":"buttons",
+                  "formData":{
+                     "button_items":"1",
+                     "preview_view":{
+                        "entity_id":"40",
+                        "button_items":"1",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}",
+                        "child_blocks":{
+                           "button_items":[
+                              {
+                                 "html":"\n        <button type=\"button\" class=\"gene-bluefoot-block-button\">SHOP NOW</button>\n    "
+                              }
+                           ]
+                        }
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                  },
+                  "children":{
+                     "button_items":[
+                        {
+                           "contentType":"button_item",
+                           "formData":{
+                              "link_text":"SHOP NOW",
+                              "link_url":"/venia-tops/venia-blouses.html",
+                              "preview_view":{
+                                 "entity_id":"41",
+                                 "link_text":"SHOP NOW",
+                                 "link_url":"/venia-tops/venia-blouses.html",
+                                 "align":"center",
+                                 "metric":""
+                              },
+                              "align":"center",
+                              "metric":""
+                           }
+                        }
+                     ]
+                  }
+               }
+            ]
+         },
+         {
+            "type":"column",
+            "formData":{
+               "width":0.333,
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"center",
+               "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+            },
+            "children":[
+               {
+                  "contentType":"image",
+                  "formData":{
+                     "alt_tag":"Blouse Two",
+                     "has_lightbox":"0",
+                     "show_caption":"0",
+                     "image":"/b/l/blouse2_stocksnap_8dao2yqg9w.jpg",
+                     "preview_view":{
+                        "entity_id":"42",
+                        "alt_tag":"Blouse Two",
+                        "has_lightbox":"No",
+                        "show_caption":"No",
+                        "image":"/b/l/blouse2_stocksnap_8dao2yqg9w.jpg",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                  }
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "type":"row",
+      "formData":{
+         "template":"default.phtml",
+         "background_color":"",
+         "background_image":"",
+         "css_classes":"",
+         "undefined":"",
+         "align":"center",
+         "metric":"{\"margin\":\"50px 200px - 200px\",\"padding\":\"- - - -\"}"
+      },
+      "children":[
+         {
+            "type":"column",
+            "formData":{
+               "width":"0.500"
+            },
+            "children":[
+               {
+                  "contentType":"driver",
+                  "formData":{
+                     "alt_tag":"Blouses",
+                     "link_url":"/venia-tops/venia-blouses.html",
+                     "target_blank":"0",
+                     "image":"/b/l/blouse5_stocksnap_8a93wry44s_1.jpg",
+                     "preview_view":{
+                        "entity_id":"43",
+                        "alt_tag":"Blouses",
+                        "link_url":"/venia-tops/venia-blouses.html",
+                        "target_blank":"No",
+                        "image":"/b/l/blouse5_stocksnap_8a93wry44s_1.jpg",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               },
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<h2 style=\"text-align: center;\">Sleeveless Options</h2>",
+                     "preview_view":{
+                        "entity_id":"60",
+                        "textarea":"<h2 style=\"text-align: center;\">Sleeveless Options</h2>",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               }
+            ]
+         },
+         {
+            "type":"column",
+            "formData":{
+               "width":"0.500"
+            },
+            "children":[
+               {
+                  "contentType":"driver",
+                  "formData":{
+                     "alt_tag":"Sweaters",
+                     "link_url":"/venia-tops/venia-sweaters.html",
+                     "target_blank":"0",
+                     "image":"/s/w/sweater5_stocksnap_y2qcogsp5p_1.jpg",
+                     "preview_view":{
+                        "entity_id":"45",
+                        "alt_tag":"Sweaters",
+                        "link_url":"/venia-tops/venia-sweaters.html",
+                        "target_blank":"No",
+                        "image":"/s/w/sweater5_stocksnap_y2qcogsp5p_1.jpg",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                  }
+               },
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<h2 style=\"text-align: center;\">Statement Stripes</h2>",
+                     "preview_view":{
+                        "entity_id":"61",
+                        "textarea":"<h2 style=\"text-align: center;\">Statement Stripes</h2>",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "type":"row",
+      "formData":{
+         "template":"full-width.phtml",
+         "background_color":"fff0e9",
+         "background_image":"",
+         "css_classes":"",
+         "undefined":"",
+         "align":"center",
+         "metric":"{\"margin\":\"50px - - -\",\"padding\":\"- - - -\"}"
+      },
+      "children":[
+         {
+            "type":"column",
+            "formData":{
+               "width":"0.500",
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"center",
+               "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+            },
+            "children":[
+               {
+                  "contentType":"image",
+                  "formData":{
+                     "alt_tag":"Sweaters",
+                     "has_lightbox":"0",
+                     "show_caption":"0",
+                     "image":"/s/w/sweater2_pixabay.jpg",
+                     "preview_view":{
+                        "entity_id":"47",
+                        "alt_tag":"Sweaters",
+                        "has_lightbox":"No",
+                        "show_caption":"No",
+                        "image":"/s/w/sweater2_pixabay.jpg",
+                        "align":"center",
+                        "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"0px 0px 0px 0px\",\"padding\":\"0px 0px 0px 0px\"}"
+                  }
+               }
+            ]
+         },
+         {
+            "type":"column",
+            "formData":{
+               "width":"0.500",
+               "remove_padding":"1",
+               "css_classes":"",
+               "undefined":"",
+               "align":"center",
+               "metric":"{\"margin\":\"7% - - -\",\"padding\":\"- - - -\"}"
+            },
+            "children":[
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<h2 style=\"text-align: center;\">Comfy Knitwear</h2>",
+                     "preview_view":{
+                        "entity_id":"62",
+                        "textarea":"<h2 style=\"text-align: center;\">Comfy Knitwear</h2>",
+                        "align":"",
+                        "metric":""
+                     },
+                     "align":"",
+                     "metric":""
+                  }
+               },
+               {
+                  "contentType":"textarea",
+                  "formData":{
+                     "textarea":"<p>Imagine what it would feel like to wear your favorite blanket all day, yet still look amazing. When the temperature drops on milder days, Venia sweaters make a far cozier alternative to a jacket. Comfort can look this good.</p>",
+                     "preview_view":{
+                        "entity_id":"49",
+                        "textarea":"<p>Imagine what it would feel like to wear your favorite blanket all day, yet still look amazing. When the temperature drops on milder days, Venia sweaters make a far cozier alternative to a jacket. Comfort can look this good.</p>",
+                        "align":"center",
+                        "metric":"{\"margin\":\"- 100px - 100px\",\"padding\":\"- - - -\"}"
+                     },
+                     "align":"center",
+                     "metric":"{\"margin\":\"- 100px - 100px\",\"padding\":\"- - - -\"}"
+                  }
+               },
+               {
+                  "contentType":"buttons",
+                  "formData":{
+                     "button_items":"1",
+                     "preview_view":{
+                        "entity_id":"50",
+                        "button_items":"1",
+                        "align":"center",
+                        "metric":"",
+                        "child_blocks":{
+                           "button_items":[
+                              {
+                                 "html":"\n        <button type=\"button\" class=\"gene-bluefoot-block-button\">SHOP NOW</button>\n    "
+                              }
+                           ]
+                        }
+                     },
+                     "align":"center",
+                     "metric":""
+                  },
+                  "children":{
+                     "button_items":[
+                        {
+                           "contentType":"button_item",
+                           "formData":{
+                              "link_text":"SHOP NOW",
+                              "link_url":"/venia-tops/venia-sweaters.html",
+                              "preview_view":{
+                                 "entity_id":"51",
+                                 "link_text":"SHOP NOW",
+                                 "link_url":"/venia-tops/venia-sweaters.html",
+                                 "align":"center",
+                                 "metric":""
+                              },
+                              "align":"center",
+                              "metric":""
+                           }
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "type":"extra",
+      "deleted":[
+
+      ]
+   }
 ]
