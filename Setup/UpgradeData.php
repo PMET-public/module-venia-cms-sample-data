@@ -15,11 +15,6 @@ class UpgradeData implements UpgradeDataInterface
     protected $saveFactory;
 
     /**
-     * @var
-     */
-    protected $connection;
-
-    /**
      * @var \Magento\Framework\App\ResourceConnection
      */
     protected $resource;
@@ -47,10 +42,10 @@ class UpgradeData implements UpgradeDataInterface
 
         if (version_compare($context->getVersion(), '0.0.2') < 0) {
             // Homepage CMS Page
-            $this->updateCmsPageContent('Home Page - Venia', $this->buildStructureFromTemplate(__DIR__ . '/venia-home-content.json'));
+            $this->updateCmsPageContent('Home Page - Venia', $this->buildStructureFromTemplate(__DIR__ . '/venia-home.json'));
 
             // CLP Tops Block CMS
-            $this->updateCmsBlockContent('venia-clp-tops', $this->buildStructureFromTemplate(__DIR__ . '/venia-clp-tops-content.json'));
+            $this->updateCmsBlockContent('venia-clp-tops', $this->buildStructureFromTemplate(__DIR__ . '/venia-clp-tops.json'));
         }
 
         $setup->endSetup();
