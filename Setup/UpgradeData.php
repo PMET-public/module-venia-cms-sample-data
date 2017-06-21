@@ -46,9 +46,42 @@ class UpgradeData implements UpgradeDataInterface
 
             // CLP Tops Block CMS
             $this->updateCmsBlockContent('venia-clp-tops', $this->buildStructureFromTemplate(__DIR__ . '/venia-clp-tops.json'));
+
+            // Homepage CMS template
+            $this->saveBluefootTemplate('Venia Home', json_encode(json_decode(file_get_contents(__DIR__.'/venia-home.json'),true)), file_get_contents(__DIR__.'/venia-home.png.txt'));
+
+            // CLP Tops Block template
+            $this->saveBluefootTemplate('Venia CLP Tops', json_encode(json_decode(file_get_contents(__DIR__.'/venia-clp-tops.json'),true)), file_get_contents(__DIR__.'/venia-clp-tops.png.txt'));
         }
 
         $setup->endSetup();
+    }
+
+    /**
+     * Insert the Bluefoot templates
+     *
+     * @param $title
+     * @param $template
+     * @param $screenshot
+     */
+    public function saveBluefootTemplate($title, $content, $screenshot)
+    {
+      $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+      $resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
+      $connection = $resource->getConnection();
+      $config = $objectManager->get('Magento\Framework\App\DeploymentConfig');
+      $dbName = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_NAME);
+      $dbUser = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_USER);
+      $dbPass = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_PASSWORD);
+      $dbHost = $config->get(ConfigOptionsListConstants::CONFIG_PATH_DB_CONNECTION_DEFAULT. '/' . ConfigOptionsListConstants::KEY_HOST);
+      $mysqliConnection = mysqli_connect($dbHost,$dbUser,$dbPass,$dbName);
+      $parsedContent = mysqli_real_escape_string($mysqliConnection,$content);
+      $timestamp = date('Y-m-d H:i:s');
+
+      $sql = "INSERT INTO `gene_bluefoot_stage_template` (`template_id`, `name`, `structure`, `has_data`, `preview`, `pinned`, `created_at`, `updated_at`)
+           VALUES
+             (NULL, '$title', '$parsedContent', 1, '$screenshot', 0, '$timestamp', '$timestamp');";
+      $connection->query($sql);
     }
 
     /**
