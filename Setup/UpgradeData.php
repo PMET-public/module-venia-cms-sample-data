@@ -48,10 +48,10 @@ class UpgradeData implements UpgradeDataInterface
             $this->updateCmsBlockContent('venia-clp-tops', $this->buildStructureFromTemplate(__DIR__ . '/venia-clp-tops.json'));
 
             // Homepage CMS template
-            $this->saveBluefootTemplate('Venia Home', json_encode(json_decode(file_get_contents(__DIR__.'/venia-home.json'),true)), 'data:image/png;base64,'.base64_encode(file_get_contents(__DIR__.'/venia-home.png')));
+            $this->saveBluefootTemplate('Venia Home', json_encode(json_decode(file_get_contents(__DIR__.'/venia-home.json'),true)), file_get_contents(__DIR__.'/venia-home.png.txt'));
 
             // CLP Tops Block template
-            $this->saveBluefootTemplate('Venia CLP Tops', json_encode(json_decode(file_get_contents(__DIR__.'/venia-clp-tops.json'),true)), 'data:image/png;base64,'.base64_encode(file_get_contents(__DIR__.'/venia-clp-tops.png')));
+            $this->saveBluefootTemplate('Venia CLP Tops', json_encode(json_decode(file_get_contents(__DIR__.'/venia-clp-tops.json'),true)), file_get_contents(__DIR__.'/venia-clp-tops.png.txt'));
         }
 
         $setup->endSetup();
