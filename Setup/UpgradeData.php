@@ -34,10 +34,10 @@ class UpgradeData implements UpgradeDataInterface
 
         if (version_compare($context->getVersion(), '0.0.3') < 0) {
             // Homepage CMS Page
-            $this->updateCmsPageContent('Home Page - Venia', file_get_contents('MagentoEse_VeniaCmsSampleData::fixtures/venia-home-pb.txt'));
+            $this->updateCmsPageContent('Home Page - Venia', file_get_contents(__DIR__ . '/../fixtures/venia-home-pb.txt'));
 
             // CLP Tops Block CMS
-            $this->updateCmsBlockContent('venia-clp-tops', file_get_contents('MagentoEse_VeniaCmsSampleData::fixtures/venia-clp-tops-pb.txt'));
+            $this->updateCmsBlockContent('venia-clp-tops', file_get_contents(__DIR__ . '/../fixtures/venia-clp-tops-pb.txt'));
         }
 
         $setup->endSetup();
