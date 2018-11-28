@@ -35,6 +35,7 @@ class UpgradeData implements UpgradeDataInterface
         if (version_compare($context->getVersion(), '0.0.3') < 0) {
             // Homepage CMS Page
             $this->updateCmsPageContent('Home Page - Venia', file_get_contents(__DIR__ . '/../fixtures/venia-home-pb.txt'));
+            $this->updateCmsPageLayout('Home Page - Venia', 'cms-full-width');
 
             // CLP Tops Block CMS
             $this->updateCmsBlockContent('venia-clp-tops', file_get_contents(__DIR__ . '/../fixtures/venia-clp-tops-pb.txt'));
@@ -52,6 +53,17 @@ class UpgradeData implements UpgradeDataInterface
     public function updateCmsPageContent($title, $content)
     {
         $this->resource->getConnection()->update('cms_page', ['content' => $content], ['title = ?' => $title]);
+    }
+
+    /**
+     * Update the CMS pages layout
+     *
+     * @param $title
+     * @param $layout
+     */
+    public function updateCmsPageLayout($title, $layout)
+    {
+        $this->resource->getConnection()->update('cms_page', ['page_layout' => $layout], ['title = ?' => $title]);
     }
 
     /**
