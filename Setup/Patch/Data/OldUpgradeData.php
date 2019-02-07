@@ -1,14 +1,20 @@
 <?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 
-namespace MagentoEse\VeniaCmsSampleData\Setup;
+namespace MagentoEse\VeniaCmsSampleData\Setup\Patch\Data;
 
-use Magento\Framework\Setup\UpgradeDataInterface;
-use Magento\Framework\Setup\ModuleContextInterface;
-use Magento\Framework\Setup\ModuleDataSetupInterface;
-use Magento\Framework\Config\ConfigOptionsListConstants;
 
-class UpgradeData implements UpgradeDataInterface
+use Magento\Framework\Setup\Patch\DataPatchInterface;
+use Magento\Framework\Setup\Patch\PatchVersionInterface;
+
+
+class OldUpgradeData implements DataPatchInterface,PatchVersionInterface
 {
+
+
     /**
      * @var \Magento\Framework\App\ResourceConnection
      */
@@ -24,24 +30,14 @@ class UpgradeData implements UpgradeDataInterface
         $this->resource = $resource;
     }
 
-    /**
-     * @param ModuleDataSetupInterface $setup
-     * @param ModuleContextInterface $context
-     */
-    public function upgrade(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
+    public function apply()
     {
-        $setup->startSetup();
+        // Homepage CMS Page
+        $this->updateCmsPageContent('Home Page - Venia', file_get_contents(__DIR__ . '/../../../fixtures/venia-home-pb.txt'));
+        $this->updateCmsPageLayout('Home Page - Venia', 'cms-full-width');
 
-        if (version_compare($context->getVersion(), '0.0.3') < 0) {
-            // Homepage CMS Page
-            $this->updateCmsPageContent('Home Page - Venia', file_get_contents(__DIR__ . '/../fixtures/venia-home-pb.txt'));
-            $this->updateCmsPageLayout('Home Page - Venia', 'cms-full-width');
-
-            // CLP Tops Block CMS
-            $this->updateCmsBlockContent('venia-clp-tops', file_get_contents(__DIR__ . '/../fixtures/venia-clp-tops-pb.txt'));
-        }
-
-        $setup->endSetup();
+        // CLP Tops Block CMS
+        $this->updateCmsBlockContent('venia-clp-tops', file_get_contents(__DIR__ . '/../../../fixtures/venia-clp-tops-pb.txt'));
     }
 
     /**
@@ -77,4 +73,17 @@ class UpgradeData implements UpgradeDataInterface
         $this->resource->getConnection()->update('cms_block', ['content' => $content], ['identifier = ?' => $identifier]);
     }
 
+    public static function getDependencies()
+    {
+        return [];
+    }
+
+    public function getAliases()
+    {
+        return [];
+    }
+    public static function getVersion()
+    {
+        return '0.0.3';
+    }
 }

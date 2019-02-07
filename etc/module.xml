@@ -6,7 +6,7 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="MagentoEse_VeniaCmsSampleData" setup_version="0.0.3">
+    <module name="MagentoEse_VeniaCmsSampleData">
         <sequence>
             <module name="Magento_Cms"/>
             <module name="MagentoEse_VeniaSetup"/>
