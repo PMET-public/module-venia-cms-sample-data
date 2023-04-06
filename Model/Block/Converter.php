@@ -5,6 +5,8 @@
  */
 namespace MagentoEse\VeniaCmsSampleData\Model\Block;
 
+use Magento\Eav\Model\Config;
+
 /**
  * Class Converter
  */
@@ -40,6 +42,14 @@ class Converter
      * @var \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory
      */
     protected $productCollectionFactory;
+
+    /**
+     * 
+     * @var Config
+     */
+    protected $eavConfig;
+    
+    protected $productConverter;
 
     /**
      * @param \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $categoryFactory
